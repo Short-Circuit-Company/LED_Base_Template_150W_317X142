@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LED Base Template 150W (317 x 142)</title>
+    <style>
+      :root { --bg:#0b0c10; --card:#111318; --text:#e6eaf2; --muted:#aab3c5; --accent:#5aa9e6; --accent2:#84d2f6; }
+      html, body { margin: 0; padding: 0; }
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: linear-gradient(160deg, #0b0c10, #0e1117 40%, #0b0c10); }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 24px; }
+      header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+      .title { display: flex; flex-direction: column; gap: 6px; }
+      h1 { font-size: 1.5rem; line-height: 1.25; margin: 0; }
+      .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
+      .card { background: var(--card); border: 1px solid #23262c; border-radius: 10px; padding: 16px; box-shadow: 0 1px 0 rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.03); }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 16px; }
+      h2 { font-size: 1.1rem; margin: 0 0 10px; color: var(--accent2); }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      ul { padding-left: 18px; margin: 8px 0 0; }
+      .badges { display:flex; flex-wrap:wrap; gap:8px; margin-top: 8px; }
+      .badge { background:#1a1f2a; border:1px solid #2a3140; color:#c9d4ea; padding:4px 10px; border-radius:999px; font-size:12px; }
+      .gallery { display:grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 12px; }
+      .thumb { background:#0d0f14; border:1px solid #23262c; border-radius:8px; overflow:hidden; }
+      .thumb img { width:100%; height:auto; display:block; background:#0d0f14; }
+      footer { margin-top: 18px; color: var(--muted); font-size: 0.9rem; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="title">
+          <h1>LED Base Template 150W (317 x 142)</h1>
+          <p class="meta">Short Circuit Company — KiCad 9 template</p>
+        </div>
+      </header>
+
+      <div class="grid">
+        <section class="card">
+          <h2>Overview</h2>
+          <p>Template for an LED street light base PCB (~150 W) with a 317 mm × 142 mm outline. Includes schematic, PCB, and project settings to accelerate design.</p>
+          <div class="badges">
+            <span class="badge">KiCad 9</span>
+            <span class="badge">LED Lighting</span>
+            <span class="badge">High Power</span>
+            <span class="badge">Metric</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Specifications</h2>
+          <ul>
+            <li>Board size: 317 mm × 142 mm</li>
+            <li>Application: Street light base (~150 W)</li>
+            <li>Files: schematic, PCB, project settings</li>
+            <li>License: MIT</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Contents</h2>
+          <ul>
+            <li>LED_PCB_Street_150w.kicad_pro</li>
+            <li>LED_PCB_Street_150w.kicad_sch</li>
+            <li>LED_PCB_Street_150w.kicad_pcb</li>
+            <li>README.txt, LICENSE.txt, meta/template.json</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Usage</h2>
+          <ul>
+            <li>File → New → Project from Template → select this template</li>
+            <li>Adjust symbols, footprints, and nets to your design</li>
+            <li>Run ERC/DRC; verify fab notes per manufacturer</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="card" style="margin-top:16px;">
+        <h2>Preview</h2>
+        <div class="gallery">
+          <div class="thumb"><img src="../images/150_BH-Edge_Cuts.png" alt="Edge Cuts" onerror="this.parentNode.style.display='none'"></div>
+          <div class="thumb"><img src="../images/150_BH-F_Silkscreen.png" alt="F.Silkscreen" onerror="this.parentNode.style.display='none'"></div>
+          <div class="thumb"><img src="../images/150_BH-F_Cu.png" alt="F.Cu" onerror="this.parentNode.style.display='none'"></div>
+          <div class="thumb"><img src="../images/150_BH-F_Mask.png" alt="F.Mask" onerror="this.parentNode.style.display='none'"></div>
+          <div class="thumb"><img src="../images/150_BH-F_Paste.png" alt="F.Paste" onerror="this.parentNode.style.display='none'"></div>
+          <div class="thumb"><img src="../images/150_BH-F_Fab.png" alt="F.Fab" onerror="this.parentNode.style.display='none'"></div>
+        </div>
+      </section>
+
+      <div class="grid" style="margin-top:16px;">
+        <section class="card">
+          <h2>Contacts</h2>
+          <ul>
+            <li>Company: <a href="https://shortcircuit.company/" target="_blank" rel="noopener">shortcircuit.company</a></li>
+            <li>Support: <a href="mailto:scc@shortcircuitcompany.com">scc@shortcircuitcompany.com</a></li>
+            <li>Designer: <a href="https://abubakr.rf.gd/" target="_blank" rel="noopener">abubakr.rf.gd</a></li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>License</h2>
+          <p>Released under the MIT License — see LICENSE.txt.</p>
+        </section>
+        <section class="card">
+          <h2>Compatibility</h2>
+          <p>KiCad's template browser prefers bitmap previews. Export PNGs (300–600 dpi) to the <code>images/</code> folder with these names:</p>
+          <ul>
+            <li>150_BH-Edge_Cuts.png</li>
+            <li>150_BH-F_Silkscreen.png</li>
+            <li>150_BH-F_Cu.png</li>
+            <li>150_BH-F_Mask.png</li>
+            <li>150_BH-F_Paste.png</li>
+            <li>150_BH-F_Fab.png</li>
+          </ul>
+        </section>
+      </div>
+
+      <footer>
+        All rights reserved. © Short Circuit Company 2025
+      </footer>
+    </div>
+  </body>
+  </html>
+
+

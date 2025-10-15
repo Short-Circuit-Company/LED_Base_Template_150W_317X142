@@ -1,0 +1,39 @@
+{
+  "name": "LED Base Template 150W (317 x 142)",
+  "description": "KiCad 9 project template for an LED street light base PCB (~150 W) with a 317 mm x 142 mm outline. Includes schematic, PCB, and project settings.",
+  "author": {
+    "name": "Ahmed Abubakr",
+    "organization": "Short Circuit Company",
+    "contact": {
+      "web": "https://abubakr.rf.gd/",
+      "email": "ahmed.mo.abubakr@gmail.com"
+    }
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "kicad_version": "9.0",
+  "categories": [
+    "Electronics",
+    "Lighting",
+    "Power"
+  ],
+  "tags": [
+    "LED",
+    "Street Light",
+    "High Power",
+    "PCB"
+  ],
+  "homepage": "https://shortcircuit.company/",
+  "support": {
+    "email": "scc@shortcircuitcompany.com"
+  },
+  
+  "files": [
+    "LED_PCB_Street_150w.kicad_pro",
+    "LED_PCB_Street_150w.kicad_sch",
+    "LED_PCB_Street_150w.kicad_pcb",
+    "README.txt",
+    "LICENSE.txt"
+  ]
+}
+
